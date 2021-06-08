@@ -1,0 +1,36 @@
+#navbar {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+    float: center;
+    padding: 20px;
+    }
+    #navbar {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 80px;
+        float: center;
+        padding: 20px;
+        
+    }
+    #navbar>a {
+        text-align: center;
+        font-size: 22px;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 1%;
+        margin:10px;
+        background-color: rgb(221, 162, 255);
+        box-shadow: rgb(255, 197, 122) 10px 10px;
+        border-radius: 20%;
+    
+    }
+    h1 {
+        background-color: rgb(221, 162, 255);
+        box-shadow: rgb(255, 197, 122) 5px 10px;
+    }
+    body {
+        background-color: rgb(167, 255, 179);
+    }
+   
