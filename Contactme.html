@@ -12,43 +12,41 @@
             </nav>
     </head>
     <body>
-        <form id="myform"> 
-            Fill in the form to contact me! <br>
-            <label for="firstname"> First name </label>
-            <input type="text" name="fname" id="firstname"> <br><br>
-            <label for="lastname"> Last name </label>
-            <input type="text" name="lname" id="lastname"> <br><br>
-            <label for="male"> Male <label>
-            <input type="radio" name="male" id="male">
-                <label for="female"> Female <label>
-            <input type="radio" name="female" id="female">
+       <form id="myform"  action="emailto:aashigirldiva@gmail.com" method="POST">
+            Fill in the form to contact me!<br><br>
+            <label for="firstname">First Name</label>
+            <input type="text" name="fname" id="firstname"><br><br>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lname" id="lastname"><br><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="Female"><br><br>
+            <label>Hobbies</label><br>
+            <input type="checkbox" name="dancing" id="dancing" value="Dancing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" name="reading" id="reading" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="singing" id="singing" value="Singing">
+            <label for="singing">Singing</label><br><br>
+           <label for="emaild">Email ID</label>
+            <input type="email" id="emaild" name="email"><br><br>
+           <label for="info"> Subjects Interested </label>
+           <select id="info" name ="info">
+               <option id="python" value="python" name="python">Python</option>
+                                                        <option id="Java" value="Java" name="Java">Java</option>
+               <option id="Scratch" value="Scratch" name="Scratch">Scratch</option>
+                                                        </select> <br> <br>
+           <label for="suggestion"> Any Suggestions? </label>
+           <textarea id="suggestion" name="suggestion" rows="10" cols="50"> Enter your message here!</textarea> <br> <br>
+           <label for="pwd"> Password</label>
+           <input type="password" id="pwd" name="password"> <br> <br>
+           <input type="submit" name="submit" value"submit">
+
+
         </form>
         
-        
-        
-        
-        
-                    
-                    
-        
-        
-        <div class="container">
-            <form id="contactform" action="thxforsubmitting.html">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="Email">Email</label>
-              <input type="text" id="Email" name="email" placeholder="Your Email..">
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
-          </div>
-</body> </html> 
+    </body>
+</html>
+
+  
