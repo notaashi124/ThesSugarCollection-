@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head> <title> The Sugar Collection </title> <link rel="stylesheet" href="3webpages.css">
-        <h1 id="SuGaRcOlLeCtIoN" onmouseover="colorchange()"> The Sugar Collection</h1> 
+        <h1 id="SuGaRcOlLeCtIoN" onmouseover="colorchange()" onmouseout="restorecolor()"> The Sugar Collection</h1> 
         <nav id="navbar">
             <a href="index.html"> Home </a>
             <a href="cupcakes.html"> Cupcakes! </a>
@@ -17,6 +17,8 @@
             Click on any of the goods above to learn about them! While your at it, find some scrumptious recipies!! Only at Sugar Collection!
         </h2>
         <script>
-        function colorchange() {document.getElementById("SuGaRcOlLeCtIoN").style.color= "orange";}
+        function colorchange() {document.getElementById("SuGaRcOlLeCtIoN").style.color= "orange";} 
+            function restorecolor() {document.getElementById("SuGaRcOlLeCtIoN").style.color="black";}
         </script>
+      
 </body> </html> 
