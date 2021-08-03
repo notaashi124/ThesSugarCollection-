@@ -15,11 +15,20 @@
     <button onclick = "minus()">-</button>
     <button onclick = "multiply()">*</button>
     <button onclick = "divide()">/</button>
-    <br><br><br><br>
+      <button onclick = "multiplytable()">multiplication table</button>
+      <br><br><br><br>
+      <p id="table"> </p>
         <script> function plus(){
              var num1 = document.getElementById("number"1).value;
             var num2 = document.getElementById("number"2).value;
             result.value = num1+num2; }
+            function multiplytable(){
+            var num=document.getElementById("number1".value;}
+            var i=0;
+            while (i<=10)}
+            var res=num*i;
+            document.getElementById ("table").innerHTML+=res;
+            i++;
     </script>
     
   </body>
