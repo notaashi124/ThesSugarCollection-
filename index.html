@@ -12,6 +12,7 @@
             <a href="calculator.html"> MATH! </a>
             </nav>
     </head>
+    <p id="today"> </p>
     <img style="padding: 2%;" src="AND MORE!.png">
     <body>
         <h2> Welcome to the Sugar Collection! Learn about the sweetest of treats: Cupcakes, Doughnuts, and Ice-cream!
@@ -20,6 +21,9 @@
         <script>
         function colorchange() {document.getElementById("SuGaRcOlLeCtIoN").style.color= "orange";} 
             function restorecolor() {document.getElementById("SuGaRcOlLeCtIoN").style.color="black";}
+            function getdate() {var today= new Date();
+                                document.getElementById ("today").innerHTML=today.toLocaleString();
+                               } setInterval(getdate,1000);
         </script>
       
 </body> </html> 
