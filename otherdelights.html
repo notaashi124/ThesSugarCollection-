@@ -19,8 +19,22 @@
         <p> <3</p>
         <p> hi </p>
         <div id="slideshow"> 
-        <img src="brownies
+        <img src="brownies.jpeg" class="slides">
+          <img src="slushies.jpeg" class="slides">  
+            <img src="pastries.jpeg" class="slides">
+            <img src="cookies.jpeg" class="slides">
         </div>
+        <script>
+            var slideindex=0;
+            function slideshow() {
+            var myslides=document.getElementsByClassName("slides");
+                for (var i=0; i<4:i++){
+myslides[i].style.display="none";}
+                myslides[slideindex].style.display="block";
+                slideindex=slideindex+1;
+                setTimeout(slideshow,1000;)
+            }
+        </script>
         
     </body>
      </html> 
