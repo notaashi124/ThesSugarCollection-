@@ -36,10 +36,11 @@
                 for (var i=0; i<4:i++){
 myslides[i].style.display="none";}
                 myslides[slideindex].style.display="block";
-                slideindex=slideindex+1 if(slideindex>=4){ slideindex=0;}};
+                slideindex=slideindex+1;
+                if(slideindex>=4){ slideindex=0;}
                 setTimeout(slideshow,1000;)
             }
-        slideshow()
+        slideshow();
         </script>
         
     </body>
