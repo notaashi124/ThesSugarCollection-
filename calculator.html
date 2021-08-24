@@ -36,10 +36,14 @@
             document.getElementById ("table").innerHTML+="<br>"+res;
             i++;
       </script>
-<h2>Guessing Game</h2> <input type="text" id="name"> <button type="button" onclick="checkGuess()">Check Guess</button> <script> function checkGuess(){ } </script>
-    var guessedword=document.getElementById("name").value; 
+<h2>Guessing Game</h2> <input type="text" id="name"> 
+      <button type="button" onclick="checkGuess()">Check Guess</button>
+      <p id="msg"></p>
+      <script> function checkGuess(){ var guessedword=document.getElementById("name").value; 
       if(guessedword==chosenword){
       document.getElementById("msg").innerHtml="You are correct, congrats!!";
       else {
-      document.getElementById("msg").innerHtml="Sorry the word was "+chosenword;}}
+      document.getElementById("msg").innerHtml="Sorry the word was "+chosenword;}} 
+                                                                                                                                                   } </script>
+   
   </body>
