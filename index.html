@@ -18,6 +18,8 @@
         <h2> Welcome to the Sugar Collection! Learn about the sweetest of treats: Cupcakes, Doughnuts, and Ice-cream!
             Click on any of the goods above to learn about them! While your at it, find some scrumptious recipies!! Only at Sugar Collection!
         </h2>
+      <br><br>
+        <canvas id="mycanvas" style="background-color:#a09de3;border:1px solid #326ba8;"> </canvas>
         <script>
         function colorchange() {document.getElementById("SuGaRcOlLeCtIoN").style.color= "orange";} 
             function restorecolor() {document.getElementById("SuGaRcOlLeCtIoN").style.color="black";}
@@ -25,5 +27,17 @@
                                 document.getElementById ("today").innerHTML=today.toLocaleString();
                                } setInterval(getdate,1000);
         </script>
-      
+        <script>
+        var can=document.getElementById("mycanvas");
+            can.width=window.innerWidth-100;
+            can.height=window.innerHeight*2/3;
+            var c=can.getContext('2d');
+            
+            c.font="44px 'Arial'";
+            c.fillStyle="salmon";
+            c.fillText("Aashi",can.width/2,50);
+            c.font="25px 'Arial'";
+            c.fillStyle="crimson";
+            c.fillText("HAPPY BIRTHDAY!!!",can.width/2,can.height/2);
+        </script>
 </body> </html> 
