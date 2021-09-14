@@ -33,11 +33,27 @@
             can.height=window.innerHeight*2/3;
             var c=can.getContext('2d');
             
-            c.font="44px 'Arial'";
+            
+            var dx=0,dy=can.height;
+            var img=new Image();
+            img.src="balloons.png";
+            function animate(){
+                c.clearRect(0,0,can.width,can.height);
+                c.font="44px 'Arial'";
             c.fillStyle="salmon";
             c.fillText("Aashi",can.width/2,50);
             c.font="25px 'Arial'";
             c.fillStyle="crimson";
-            c.fillText("HAPPY BIRTHDAY!!!",can.width/2,can.height/2);
+            c.fillText("HAPPY BIRTHDAY!!!",dx,can.height/2);}
+            dx+=10;
+            if(dx>can.width){
+                dx=0;
+            }
+            c.drawImage(img,can.width/2,dy,150,150);
+            dy-=10;
+            if (dy<0);{
+                dy=can.height;
+            }
+            setInterval(animate,100);
         </script>
 </body> </html> 
