@@ -36,7 +36,7 @@
             
             var dx=0,dy=can.height;
             var img=new Image();
-            img.src="balloons.png";
+            img.src="ballons.png";
             function animate(){
                 c.clearRect(0,0,can.width,can.height);
                 c.font="44px 'Arial'";
@@ -49,8 +49,8 @@
             if(dx>can.width){
                 dx=0;
             }
-            img.onload=function(){
-                c.drawImage(img,can.width/2,dy,150,150);}
+          
+                c.drawImage(img,can.width/2,dy,150,150);
             dy-=10;
             if (dy<0);{
                 dy=can.height;
