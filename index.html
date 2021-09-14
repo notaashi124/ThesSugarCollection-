@@ -49,7 +49,8 @@
             if(dx>can.width){
                 dx=0;
             }
-            c.drawImage(img,can.width/2,dy,150,150);
+            img.onload=function(){
+                c.drawImage(img,can.width/2,dy,150,150);}
             dy-=10;
             if (dy<0);{
                 dy=can.height;
