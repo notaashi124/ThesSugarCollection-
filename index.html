@@ -15,6 +15,7 @@
             <a href="otherdelights.html"> Other Delights!</a>
             <a href="Contactme.html"> Contact me! </a>
             <a href="calculator.html"> MATH! </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="bars.png"/></a>
         </nav>
     <p id="today" style="text-align:center;"> </p>
     <img style="padding: 2%;" src="AND MORE!.png">
@@ -61,4 +62,6 @@
             }}
             setInterval(animate,100);
         </script>
+function myFunction() { var x = document.getElementById("navbar"); if (x.className === "nav-bar1") { x.className += " responsive"; } else { x.className = "nav-bar1"; } }
+        
 </body> </html> 
